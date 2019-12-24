@@ -1,0 +1,64 @@
+﻿/*==================== TOP HEADER =====================*/
+
+
+
+#top-menu { float:right;height: 28px;margin: 0;padding:0;  text-align: left;
+            position:absolute;top:10px;right:0;
+           
+            /*background:#684A28;*/
+            width:720px;}
+#top-menu ul {height: 28px;margin:0;padding:0;margin-left:15px;}
+#top-menu ul li{float: left; height: 28px;margin-left:0;padding:0;padding-left:10px;  }
+#top-menu ul li:first-child { background: none;}
+#top-menu ul li a { color:white ;
+                    /*color:white ;*/
+                    font-size: 14px;font-weight:bold;
+                   margin-right: 5px; font-family:Arial; padding: 0; line-height: 28px; text-transform: capitalize;
+                   text-decoration:none;}
+#top-menu ul li a.active { color: #3F80C9 ;}
+#top-menu ul li a:hover { color: #FEF629;}
+/*#top-menu ul li:hover { background: #FEF629;}*/
+#top-menu ul ul { display:none; position: absolute;height: auto; background:#F5F5F5; border-radius: 0; z-index: 100; 
+                  width: auto;padding:0;background:#735330;}
+#top-menu ul ul li {clear: left; line-height: 28px; border-bottom: 1px dashed rgba(0,0,0,0.075); height: 28px; background: none; 
+                    padding: 0; padding-left:10px;margin: 0; 
+                    /*width: 220px;*/ 
+                    width: 250px; 
+                    text-align: left}
+#top-menu ul ul li:last-child { border-bottom: none}
+#top-menu ul ul li a { padding: 0;margin:0; line-height: 28px; border: none; background: none; text-transform: none}
+/*#top-menu ul ul li:hover { background: #FEF629;}*/
+#top-menu ul ul ul {display:none; left: 0; top: auto; margin-top: -28px;}
+#top-menu ul ul ul ul {display:none; left:220px;}
+#top-menu ul li:hover ul {display:block;}
+#top-menu ul li:hover ul ul {display:none;}
+#top-menu ul ul li:hover ul {display:block;}
+/*#top-menu li.sub { background: url(../images/icon-nav-left.png) no-repeat right}
+#top-menu li.sub:hover { background: url(../images/icon-nav-left.png) no-repeat right}*/
+
+.main-social {}
+ul.social-profile-icons { float: right; width: 200px;margin:0;margin-top:5px;margin-right:5px;height:25px;}
+ul.social-profile-icons li { background: transparent !important; border: none !important; list-style-type: none !important; margin: 0 !important; padding: 0 !important; float:left;}
+ul.social-profile-icons li a, ul.social-profile-icons li a:hover { background: url("../Images/Homepage/social.png") no-repeat scroll 0 0; display: block; height: 25px; overflow: hidden; text-indent: -999px; transition: all 0.25s linear 0s; width: 25px; padding: 0; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+ul.social-profile-icons li.social-facebook a { background-position: 0 0; }
+ul.social-profile-icons li.social-twitter a { background-position: -25px 0; }
+ul.social-profile-icons li.social-gplus a { background-position: -50px 0; }
+ul.social-profile-icons li.social-linkedin a { background-position: -75px 0; }
+ul.social-profile-icons li.social-rss a { background-position: -100px 0; }
+ul.social-profile-icons li.social-facebook a:hover { background-position: 0 -25px; }
+ul.social-profile-icons li.social-twitter a:hover { background-position: -25px -25px; }
+ul.social-profile-icons li.social-gplus a:hover { background-position: -50px -25px; }
+ul.social-profile-icons li.social-linkedin a:hover { background-position: -75px -25px; }
+ul.social-profile-icons li.social-rss a:hover { background-position: -100px -25px; }
+
+#hotline {height:40px; line-height:40px; float:right; position:absolute;top:40px;right:10px;
+          font-size:16px; color:#F00; font-weight:bolder; margin:0;padding:0;}
+.hotline-phone {color:#10adf5;font-weight:bold;}
+
+.text-rico {
+    width:500px;
+    height:100px;
+    position:absolute;
+    top:50px;
+    right:10px;
+}

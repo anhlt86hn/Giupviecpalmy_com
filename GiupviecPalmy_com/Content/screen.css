@@ -1,0 +1,71 @@
+/* -- Imported styles ----------------------------- */
+@import url("global.css");
+@import url("style.css");
+@import url("box.css");
+#main-inner{
+	margin-bottom:2em;
+	}
+.w980{
+	margin:0 auto;
+	width:980px !important;
+	}
+.div_nav{
+	margin:10px 0;
+	clear:both;
+	}
+.div_nav a{
+	color:#666;
+	}
+.title-inner{
+color: #333333;
+font-size: 30px;
+line-height: 40px;
+font-family: 'customFont';
+margin-bottom: 17px;
+padding-bottom: 8px;
+background: url(images/line_mid_title.png) bottom center repeat-x;
+display:block;
+}
+.col-alpha{
+	background:#fff;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+	float:left;
+	width:680px;
+	margin-right:20px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.35);
+-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.35);
+box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.35);
+	}
+.col-beta{
+	float:left;
+	background:#fff;
+	width:280px;
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.35);
+-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.35);
+box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.35);
+	}
+.col-alpha  .content{
+	padding:1em;
+	}
+.col-alpha h2{
+	margin-bottom: 10px;
+border-bottom: 1px solid #ddd;
+color: #333333;
+font-size: 20px;
+padding-bottom:10px;
+line-height: 30px;
+text-decoration: none;
+font-family: 'customFont';
+text-transform: uppercase;
+}
+.col-alpha h2 a{
+	color:#333;
+	}
+.box_category li a{
+	border-bottom:1px solid #ddd;
+	}

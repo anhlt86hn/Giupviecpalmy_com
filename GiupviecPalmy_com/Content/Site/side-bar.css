@@ -1,0 +1,22 @@
+﻿.side-bar-title
+{
+        width: 220px;height: 30px; line-height: 30px; font-size: 14px;font-weight: bold; color:black;text-transform: uppercase;  
+        /*background: url("../Images/homepage/title-bg.png") repeat-x;*/ 
+        background:#FEF629;
+        border-top-left-radius:5px;border-top-right-radius:5px;
+        text-align:center;     
+}
+
+.side-bar-button {
+        width: 220px;height: 36px; line-height: 36px; font-size: 14px;font-weight: bold; color:black;text-transform: uppercase;
+        /*background: url("../Images/homepage/title-bg.png") repeat-x;*/ 
+         background:#FEF629;
+        border-radius:5px;
+        text-align:center;
+}
+
+.side-bar-title a {color:black;}
+.side-bar-title a:hover {color:#3F80C9;}
+.side-bar-button a {color:black;}
+.side-bar-button a:hover {color:#3F80C9;}
+

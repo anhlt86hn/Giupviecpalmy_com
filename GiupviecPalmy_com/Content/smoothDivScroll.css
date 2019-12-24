@@ -1,0 +1,114 @@
+﻿/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft
+{
+	/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+    and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+	min-width: 20px;
+	width: 20px;
+	height: 100%;
+	/* There is a big background image and it's used to solve some problems I experienced
+    in Internet Explorer 6. */
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	left: 0;
+	/*  The first url is for Firefox and other browsers, the second is for Internet Explorer */
+	
+	background: url(images/arr_banner_L.gif) left center no-repeat;
+	border-right: 1px solid #d0d0d0;
+}
+
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+	background: url(images/arr_banner_L.gif) left center no-repeat;
+	background-repeat: no-repeat;
+	opacity: 1; /* Standard CSS3 opacity setting */
+	-moz-opacity: 1; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+	filter: alpha(opacity = 100); /* Opacity for Internet Explorer. */
+	zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+	border-right: 1px solid #d0d0d0;
+}
+
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+	min-width: 20px;
+	width: 20px;
+	height: 100%;
+	background: url(images/arr_banner_R.gif) right center no-repeat;
+	background-repeat: repeat;
+	background-position: center center;
+	position: absolute;
+	z-index: 200;
+	right: 0;
+	border-left: 1px solid #d0d0d0;
+}
+
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+	background: url(images/arr_banner_R.gif) right center no-repeat;
+	background-repeat: no-repeat;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+	-moz-opacity: 1;
+	zoom: 1;
+	border-left: 1px solid #d0d0d0;
+}
+
+/* The scroll wrapper is always the same width and height as the containing element (div).
+   Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	width:100%
+}
+
+div.scrollableArea {
+    position: relative;
+    width: auto;
+}
+#makeMeScrollable {
+    height: 80px;
+    position: relative;
+		min-width: 980px;
+		overflow: hidden;
+		border-right: none;
+		border: 1px solid #d0d0d0;
+		border-right: none;
+		border-left: none;
+}
+div.scrollableArea
+{
+	position: relative;
+	width: auto;
+}
+
+div.scrollWrapper {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 97.5%;
+		margin: 0 20px;
+}
+
+#makeMeScrollable ul {
+    list-style: none outside none;
+    overflow: hidden;
+}
+#makeMeScrollable li {
+    float: left;
+		min-height: 80px;
+    text-align: center;
+		position: relative;
+}
+#makeMeScrollable li img {
+	border-left: 1px solid #d0d0d0;
+}

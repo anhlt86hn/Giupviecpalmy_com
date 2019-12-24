@@ -1,0 +1,153 @@
+﻿@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_LayoutDefault.cshtml";
+    <script src="~/highslide/highslide-with-gallery.js"></script>
+    <link href="~/highslide/highslide.css" rel="stylesheet" />
+}
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        jQuery('ul.color li').click(function () {
+            jQuery('ul.color li').css({ border: "3px solid #D7D7D7" });
+            jQuery(this).css({ border: "3px solid #bc204f" });
+        });
+
+        jQuery('.sQuant a.btnAdd').click(function () {
+            jQuery(this).parent().find('.txtQuantity').val(parseInt(jQuery(".sQuant .txtQuantity").val()) + 1);
+        });
+
+        jQuery('.sQuant .btnDivi').click(function () {
+            if (jQuery(this).parent().find('.txtQuantity').val() < 2) {
+                jQuery(this).parent().find('.txtQuantity').val(1);
+            }
+            else {
+                jQuery(this).parent().find('.txtQuantity').val(parseInt(jQuery(this).parent().find('.txtQuantity').val()) - 1);
+            }
+        });
+
+        jQuery('.sQuant .txtQuantity').focusout(function () {
+            if (jQuery(this).parent().find('.txtQuantity').val() < 0) {
+                jQuery(this).parent().find('.txtQuantity').val(1);
+            }
+        });
+
+    });
+
+</script>
+<script type="text/javascript">
+    hs.graphicsDir = '../highslide/graphics/';
+    hs.align = 'center';
+    hs.transitions = ['expand', 'crossfade'];
+    hs.outlineType = 'glossy-dark';
+    hs.wrapperClassName = 'dark';
+    hs.fadeInOut = true;
+    //hs.dimmingOpacity = 0.75;
+
+    // Add the controlbar
+    if (hs.addSlideshow) hs.addSlideshow({
+        //slideshowGroup: 'group1',
+        interval: 5000,
+        repeat: false,
+        useControls: true,
+        fixedControls: 'fit',
+        overlayOptions: {
+            opacity: .6,
+            position: 'bottom center',
+            hideOnMouseOut: true
+        }
+    });
+
+</script>
+<script>
+    $(function () {
+        $(".tabs").tabs({
+            event: "mouseover"
+        });
+    });
+  </script>
+    <div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1&appId=429741320382398";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+    $(".tabs ul li:first").addClass("active");
+    $(".tabs div:gt(0)").hide();
+    $(".tabs ul li").click(function () {
+        $(".tabs ul li").removeClass('active');
+        //var current_index = $(this).index(); // Sử dụng cho jQuery >= 1.4.x
+        var current_index = $(".tabs ul li").index(this);
+        $(".tabs ul li:eq(" + current_index + ")").addClass("active");
+        $(".tabs div").hide();
+        $("tabs div:eq(" + current_index + ")").fadeIn(100);
+    });
+</script>
+
+<script type="text/javascript">
+    window.___gcfg = { lang: 'vi' };
+
+    (function () {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/platform.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
+</script>
+<script src="https://apis.google.com/js/plusone.js"> </script>
+<script> gapi.comments.render('comments', { href: window.location, width: '538', first_party_property: 'BLOGGER', view_type: 'FILTERED_POSTMOD' }); </script>
+<script> gapi.commentcount.render('commentscounter', { href: window.location }); </script>
+
+<div class="titlelink">
+    <ul>
+        <li><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Trang chủ</a></li>
+        
+        @Html.Raw(ViewBag.link)
+    </ul>
+</div>
+<div class="middle-wrapper">
+    <div class="box-profile-image">
+        <div class="left">
+            <div id="bigPic">
+                @Html.Raw(ViewBag.images)
+                @*<a href="Images/images/fashion1.jpg" class="highslide" onclick="return hs.expand(this)"> <img src="Images/images/fashion1.jpg" alt="Highslide JS" title="Click to enlarge" /></a>*@
+            </div>
+            @*<ul id="thumbs">
+                @Html.Raw(ViewBag.imagethumb)
+            </ul>*@
+        </div>
+        <div class="right">
+            <div id="infoPro">
+                @Html.Raw(ViewBag.pro)
+                @*<p class="sQuant">Số lượng: <input type="text" value="1" class="txtQuantity" id="quantity" name="quantity"><a class="btnAdd"></a><a class="btnDivi"></a></p>*@
+                @Html.Raw(ViewBag.cart)
+                <div class="support">
+                    <h3>Liên hệ với chúng tôi</h3>
+                    @Html.Raw(ViewBag.support)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-detail-content">
+        <div class="g-plusone" data-href="http://giupviecpalmy.com"></div>
+        <div id="comments"></div>
+        <div id="commentscounter">
+    </div>
+        <div class="tabs">
+   @Html.Raw(ViewBag.tabcontent)
+</div>
+    </div>
+</div>
+@*<div class="container-spkhac">
+<div class="cungloai">
+    <ul>
+        <li><a href='/'><i class="icon-signin"></i>&nbsp;Các Dịch vụ khác</a></li>
+    </ul>
+</div>
+<ul class="da-thumbs">
+@Html.Raw(ViewBag.cungloai)
+</ul>*@
+   

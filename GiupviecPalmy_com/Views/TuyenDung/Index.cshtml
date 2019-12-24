@@ -1,0 +1,71 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@*@using os;*@
+@using GiupviecPalmy_com.Models;
+@model PagedList.IPagedList<GiupviecPalmy_com.Models.Menu>
+
+@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_SubLayout.cshtml";
+}
+
+<div class="row container-wrapper">
+    @{Html.RenderAction("_Headline", "My_PartialView");}
+   
+     <div class="row content-wrapper">
+       
+          <div class="col-2">
+
+        </div>
+       
+          <div class="col-5">
+            <div class="box-wrapper main-box title-link-box">
+                <div class="title-link">
+                    <ul>
+                        <li class="SecondLast"><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Trang chủ</a></li>
+                        <li class="Last"><a href='@Html.Raw(ViewBag.MenuLink)'>@Html.Raw(ViewBag.MenuName)</a></li>
+                    </ul>
+                </div>
+                </div>
+
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    
+                    <div class="box-wrapper main-box">                 
+                        <h3 class="box-title">
+                            <a href="/tuyen-dung/@Model[i].Tag">
+                                <span>@Model[i].Name</span>
+                            </a>
+                        </h3>
+                        <div class="box-detail">
+                            <div class="box-thumbnail">
+                                <img src="@Model[i].Picture" alt="@Model[i].Name" />
+                            </div>
+                            <div class="box-content">
+                                <p>@Html.Raw(@Model[i].Content)</p>
+                            </div>
+                            <a href="@Html.Raw(@Model[i].Link)"><span class="news-detail">Xem chi tiết</span></a>
+                        </div>
+                    </div>                                          
+                    }  
+                   
+            <div class="box-wrapper main-box paged-list-box">
+                <div class="paged-list">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", "TuyenDung", new { page = page }), (PagedListRenderOptions)ViewBag.ship)
+                </div>
+            </div>
+
+            </div>
+        <div class="col-3">
+            @{Html.RenderAction("_RecruitmentList", "My_PartialView");}
+            @{Html.RenderAction("_LatestNews4", "My_PartialView");}
+            @*@{Html.RenderAction("_Tips5", "My_PartialView");}*@
+
+        </div>
+        </div> 
+    </div>
+
+
+

@@ -1,0 +1,48 @@
+﻿@*<script type="text/javascript" src="~/Scripts/jquery.fittext.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.lettering.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.textillate.js"></script>
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <script type="text/javascript">
+        $(function () {
+            $('.top-heading').textillate({ in: { effect: 'rollIn' } });
+        });
+        </script>*@
+
+<!--Sử dụng cho autocomplete-->
+<link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+
+<!--Sử dụng cho autocomplete-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('*[data-autocomplete-url]')
+    .each(function () {
+        $(this).autocomplete({
+            source: $(this).data("autocomplete-url")
+        });
+    });
+    });
+</script>
+
+<!--Reset ô tìm kiếm-->
+<script type="text/javascript">
+    $(function () {
+        $('#ProName').focus(function () {
+            $(this).val('');
+        });
+    });
+</script>
+@*<h1 class="top-heading" data-in-effect="rollIn">ĐẾN LÀ HẾT</h1>*@
+@*<div class="box-cart">@{Html.RenderAction("CartIcon", "Cart");}</div>*@
+<div id="search">
+    <!--BEGIN: search-->
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @id = "search-form" }))
+    {
+        <p>
+            @Html.TextBox("ProName", ViewBag.CurrentProName as string, new { data_autocomplete_url = Url.Action("Autocomplete"), @Value = "Bạn tìm kiếm gì?", @Style = "color:#999999;height:30px;", @id = "ProName" })
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Tìm kiếm" class="search-btn" />
+        </p>
+    }
+    <!--END search-->
+</div>

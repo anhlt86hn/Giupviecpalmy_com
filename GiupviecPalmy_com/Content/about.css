@@ -1,0 +1,29 @@
+.other_about {
+	background: #f7f7f7;
+	padding: 15px;
+}
+.other_about .other_title {
+	text-transform: uppercase;
+	color: #333333;
+	padding-bottom: 10px;
+}
+.other_about .other_content li {
+	padding: 2px 0 2px 15px;
+	background: url(images/arr_list_other.png) left 10px no-repeat;
+}
+.other_about .other_content li a {
+	color: #333333;
+	text-decoration: none;
+}
+.other_about .other_content li a:hover {
+	color: #ffae00;
+}
+
+.tools {
+	padding: 25px 0;
+	margin-top: 20px;
+	border-top: 1px dotted #b2b2b2;
+}
+.tools iframe:first-child {
+	width: 55px !important;
+}

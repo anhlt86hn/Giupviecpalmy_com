@@ -1,0 +1,70 @@
+﻿#support {
+    
+    width:261px;
+    height:253px;
+    /*background:#f2efc4;*/
+   
+    float:left;
+    margin:10px 0;
+    padding:0;
+    /*border:1px solid rgb(188, 188, 188);*/
+    display:table;  
+ 
+}
+
+#support img {border-radius:5px;}
+
+.supporter-name {
+    width: 90px;
+    margin:0;
+    float: left;
+    padding:0; 
+    margin-left:5px;
+}
+
+.supporter-nick {
+    float: left;
+    margin:0;
+    padding:0;
+   color:red;
+    width:auto;
+    display:table;    
+}
+
+.support img {float:right;
+              background:red;
+}
+.supporter-hotline {
+    width: 120px;
+    float: left;   
+     padding:0;
+     margin:0;  
+}
+
+
+#support a {
+        margin: 0 5px;
+    }
+
+#support span {
+        font-weight: bold;
+        text-transform: capitalize;
+        font-family: Arial;
+        font-size: 14px;
+        color:black;      
+       line-height:36px;
+}
+
+.top-title {
+    width: 261px;
+    font-size: 14px;
+    line-height: 28px;
+    color: black/*white*/;
+    font-weight: bolder;
+   padding-left:10px;
+    /*background: url("../Images/homepage/title-bg.png") repeat-x;*/
+     background: #FEF629;
+    margin:0;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}

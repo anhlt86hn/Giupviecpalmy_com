@@ -1,0 +1,43 @@
+﻿#promotion {float:left;width:220px;height:auto;margin-bottom:5px;}
+#cost-list {float:left;width:220px;height:auto;margin-bottom:5px;}
+#staff-profile {width:220px;height:auto;float:left;margin-bottom:5px;}
+
+.home-maker { width: 220px;height:auto;margin:0;margin-top:5px;padding:0;border-radius:5px;display:table;}
+.home-maker ul {width:220px;margin:0;padding:0;height:auto;
+                     border:1px solid rgb(188,188,188);
+                     border-bottom-left-radius:5px;border-bottom-right-radius:5px;display:table;}
+.home-maker ul li {width: 218px; background:#f2efc4;border-bottom: 1px dashed #e0a758; text-align:left;min-height:50px;}
+.home-maker ul li:last-child {border-bottom:none;}
+.home-maker ul li a {transition-property:margin-left;transition-duration:.5s;color: black; text-decoration: none;font-size:14px;line-height: 25px;}
+.home-maker ul li:hover {background: #10adf5;}
+.home-maker ul li a:hover {text-decoration: none;color:black;}
+.home-maker img {float: left; width: 60px; border: 0; height: 40px; margin: 5px; border: 1px solid #fff;}
+.home-maker img:hover { border: 1px solid #735330;}
+.home-maker p {margin:0 5px 5px 0;padding:0;text-align:justify;}
+
+.life-story { width: 220px;height:auto;margin:0;margin-top:5px;padding:0;border-radius:5px;display:table;}
+.life-story ul {width:220px;margin:0;padding:0;height:auto;
+                     border:1px solid rgb(188,188,188);
+                     border-bottom-left-radius:5px;border-bottom-right-radius:5px;display:table;}
+.life-story ul li {width: 218px; background:#f2efc4;border-bottom: 1px dashed #e0a758; text-align:left;min-height:50px;}
+.life-story ul li:last-child {border-bottom:none;}
+.life-story ul li a {transition-property:margin-left;transition-duration:.5s;color: black; text-decoration: none;font-size:14px;line-height: 25px;}
+.life-story ul li:hover {background: #10adf5;}
+.life-story ul li a:hover {text-decoration: none;color:black;}
+.life-story img {float: left; width: 60px; border: 0; height: 40px; margin: 5px; border: 1px solid #fff;}
+.life-story img:hover { border: 1px solid #735330;}
+.life-story p {margin:0 5px 5px 0;padding:0;text-align:justify;}
+
+#google-map {/*border:1px solid rgb(188,188,188);*/width:220px;height:auto;border-radius:5px;margin-top:5px;margin-bottom:5px;}
+.google-map-content {
+    width:220px;height:225px;border:1px solid rgb(188,188,188);
+     border-bottom-left-radius:5px;
+     border-bottom-right-radius:5px;
+     display:table;
+     float:left;}
+
+
+
+
+
+

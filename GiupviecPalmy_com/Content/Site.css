@@ -1,0 +1,189 @@
+﻿/*------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS SITE
+version:1.0
+date:8/8/2015       
+author: luonganh@gmail.com
+email: luonganh@gmail.com
+website: giupviecpalmy.com     
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* All
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+*
+{
+    margin:0;
+    padding:0; 
+    /*box-sizing:border-box;*/
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, input, select, textarea, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, td.menu-disabled, ul.links, ul.links.inline, ul.links li, .block ul, div.admin, tr.even, tr.odd, tr.drag, tbody, tbody th, thead th, .breadcrumb, .item-list .icon, .item-list .title, .item-list ul, .item-list ul li, ol.task-list li.active, .form-item, tr.odd .form-item, tr.even .form-item, .form-item .description, .form-item label, .form-item label.option, .form-checkboxes, .form-radios, .form-checkboxes .form-item, .form-radios .form-item, .marker, .form-required, .more-link, .more-help-link, .item-list .pager, .item-list .pager li, .pager-current, .tips, ul.primary, ul.primary li, ul.primary li a, ul.primary li.active a, ul.primary li a:hover, ul.secondary, ul.secondary li, ul.secondary a, ul.secondary a.active, .resizable-textarea 
+{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body 
+{
+    font-size: 62.5%;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;    
+    font-family:Calibri;
+    color: #232323;
+    display:block;
+}
+
+header, footer, nav, section, article 
+{
+    display: block;
+}
+
+/* Form
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+input.text
+{
+    padding:3px;
+    border:1px solid #999999;
+}
+
+/* Table
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+table
+{
+    border-spacing:0;
+    border-collapse:collapse;
+}
+
+td
+{
+    text-align:left;
+    font-weight:normal;
+}
+
+/* Paragraph
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+p
+{
+    font-size:1em;
+   
+}
+
+/* Typography
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+h1{
+	/*font-size: 2.6em;*/
+    font-size:24px;
+	margin-bottom: 15px;
+    line-height: 20px;
+}
+h2{
+	/*font-size: 2em;*/
+    font-size:20px;
+    margin: 0; padding: 0;
+    margin-bottom: 8px;
+    line-height: 18px;
+}
+h3{
+	/*font-size: 1.2em;*/
+    font-size:18px;
+	margin-bottom: 5px;
+    line-height: 1em;
+     color:#0000CD;
+}
+h4{
+	/*font-size: 1em;*/
+    font-size:16px;
+	margin-bottom: 5px;
+    color:#0000CD;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+h5{
+	/*font-size: 1em;*/
+    font-size:14px;
+	margin-bottom: 5px;
+}
+h6{
+	/*font-size: 1em;*/
+    font-size:12px;
+	margin-bottom:5px;
+}
+
+/* Clear
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+/* Responsive Grid-View
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    /*padding:5px;*/
+    padding:5px;
+ -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size:1.4em;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/* Container wrapper of content
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*.container-wrapper
+{    
+    background:#E6E6E6;
+}*/
+
+/* Slide
+-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.carousel-inner img
+    {   
+        width:100%;  
+    }  
+    
+.carousel-inner .item
+    {  
+        transition:opacity 0.4s ease-in-out ;  
+        -webkit-transition:opacity 0.4s ease-in-out;   
+        -ms-transition:opacity 0.4s ease-in-out;  
+    }  
+    
+.carousel-inner .active.left,.carousel-inner .active.right
+    {  
+        left:0;  
+        opacity:0.3;    
+    }   
+
+.carousel-inner .next,.carousel-inner .prev 
+    {  
+     opacity:0.5;  
+    }  
+
+
+.container-wrapper {background:#E6E6E6;}

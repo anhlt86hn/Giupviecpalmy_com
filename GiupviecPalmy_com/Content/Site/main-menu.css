@@ -1,0 +1,191 @@
+﻿.main-menu{
+	margin:5px auto;
+    padding:0;
+    width:1024px;
+    /*width:100%;*/
+    height:100px;      
+    /*background: url("../Images/homepage/bg-top.gif") top center no-repeat;*/  
+   }
+
+.main-menu a{
+	float:left;
+    /*width:141px;
+    height:132px;*/  
+    margin-left:2px;
+    width:100px;
+    height:100px;
+}
+
+.main-menu .dmw{
+     
+     border: 5px solid #E7E7E7;
+    
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 14px;  
+    
+    font-weight:bold;
+    margin: 5px auto;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    /*width: 131px;
+    height: 132px;*/
+    width:100px;
+    height:100px;
+}
+
+.main-menu span {width:50px;}
+
+.main-menu .dmw:hover{
+	box-shadow: 0 0 10px #000;
+	transform:rotate(360deg) scale(1.1);
+	-ms-transform:rotate(360deg) scale(1.1);
+	-webkit-transform:rotate(360deg) scale(1.1);
+   
+}
+
+.main-menu .menu-1{
+    background-color:#684A28; 
+    /*background-image: url('../images/homepage/menu/menu-1.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+    padding:20px 5px 5px 5px;
+    
+}
+
+
+.main-menu .menu-2{
+	background-color: #000;
+    /*background-image: url('../images/homepage/menu/menu-2.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+     padding:22px 5px 5px 5px;
+}
+
+.main-menu .menu-3{
+	background-color: #FF0000;
+    /*background-image: url('../images/homepage/menu/menu-3.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+     padding:22px 5px 5px 5px;
+}
+
+.main-menu .menu-4{
+	background-color:  #DD3C9E;
+    /*background-image: url('../images/homepage/menu/menu-4.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+     padding:22px 5px 5px 5px;
+}
+
+.main-menu .menu-5{
+	background-color: #9C05D3;
+    /*background-image: url('../images/homepage/menu/menu-5.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+   padding:15px 10px 5px 10px;
+}
+
+.main-menu .menu-6{
+	background-color: #F60;
+    /*background-image: url('../images/homepage/menu/menu-6.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+     padding:15px 10px 5px 10px;
+}
+
+.main-menu .menu-7{
+	background-color: #46629E;
+    /*background-image: url('../images/homepage/menu/menu-7.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+     padding:10px 5px 5px 5px;
+}
+
+.main-menu .menu-8{
+	background-color:#3F80C9;
+    /*background-image: url('../images/homepage/menu/menu-7.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+      padding:25px 10px 5px 10px;
+}
+
+.main-menu .menu-9{
+	background-color: #6BC12C;
+    /*background-image: url('../images/homepage/menu/menu-7.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+    padding:23px 10px 5px 10px;
+}
+
+
+.main-menu .menu-10{
+	background-color:#FEF629; /*#FB0;*/ 
+    /*background-image: url('../images/homepage/menu/menu-7.png');*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center 15px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 30px auto;
+    float:left;
+     padding:25px 0 0 0;
+     color:#684A28;
+}
+
+/*img, a, h1, span, div {
+    color: #fff;
+    line-height: 18px;
+    text-align: justify;
+}
+a, a:visited {
+    color: #222;
+    text-decoration: none;
+    outline: medium none;
+    transition: color 0.5s ease 0s;
+}*/

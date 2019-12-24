@@ -1,0 +1,113 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+@*@using os;*@
+@using GiupviecPalmy_com.Models;
+@model PagedList.IPagedList<GiupviecPalmy_com.Models.News>
+
+@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_SubLayout.cshtml";
+}
+
+
+<div class="row container-wrapper">
+    @{Html.RenderAction("_Headline", "My_PartialView");}
+
+    <div class="row content-wrapper">
+        <div class="col-2"></div>
+
+        <div class="col-5">
+            <div class="box-wrapper main-box title-link-box">
+                <div class="title-link">
+                    <ul>
+                        <li class="SecondLast"><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Trang chủ</a></li>
+                        <li class="Last"><a href='@Html.Raw(ViewBag.MenuLink)'>@Html.Raw(ViewBag.MenuName)</a></li>
+                    </ul>
+                </div>
+                </div>
+
+
+
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                       <div class="box-wrapper main-box"> 
+                            <h3 class="box-title">
+                                <a href="/khuyen-mai/@Model[i].Tag">
+                                    <span>@Model[i].Name</span>
+                                </a>
+                            </h3>
+
+                            <div class="box-detail">
+                                <div class="box-thumbnail">
+                                    <img src="@Model[i].Picture" alt="@Model[i].Name" />
+                                </div>
+                                <div class="box-content">
+                                    <p>
+                                        @Html.Raw(@Model[i].Content)
+                                    </p>
+                                </div>
+
+                                <a href="/khuyen-mai/@Html.Raw(@Model[i].Tag)"><span class="news-detail">Xem chi tiết</span></a>
+                            </div>
+                        </div>
+                    }
+            <div class="box-wrapper main-box paged-list-box">
+                <div class="paged-list">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", "KhuyenMai", new { page = page }), (PagedListRenderOptions)ViewBag.ship)
+                </div>
+                </div>
+            </div>
+
+        <div class="col-3">
+            <div id="promotion-list" class="box-wrapper main-box">
+                <h3 class="box-title">
+                    <a href="@Html.Raw(ViewBag.MenuLink)">
+                        <span>CÁC BÀI VIẾT CÙNG DANH MỤC</span>
+                        </a>
+                </h3>
+
+                    <ul class="box-list">
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            if (Request.Url.ToString().IndexOf(Model[i].Tag) > 0)
+                            {
+                                <li class="current">
+                                    <span class="list_active"></span>
+                                    <a href="/khuyen-mai/@Model[i].Tag" class="current">
+
+                                        <span>@Model[i].Name</span>
+                                    </a><div class="clear"></div>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="last">
+                                    <span class="list_active"></span>
+
+                                    <a href="/khuyen-mai/@Model[i].Tag" class="last">
+                                        <span>@Model[i].Name</span>
+                                    </a><div class="clear"></div>
+                                </li>
+                            }
+                        }
+                    </ul>
+
+                    <div class="paged-list">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", "KhuyenMai", new { page = page }), (PagedListRenderOptions)ViewBag.ship)
+                    </div>
+           
+            </div>
+        
+        </div>
+
+
+
+
+
+            </div>
+        </div>
+
+   
+  

@@ -1,0 +1,23 @@
+HTTrack3.48-19+htsswf+htsjava launched on Fri, 12 Sep 2014 14:29:05 at http://thevectorlab.net/adminlab/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://thevectorlab.net/adminlab/ -O1 "D:\LAMVIEC\GET\AdminLab" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:34:56	Warning: 	File not parsed, looks like binary: thevectorlab.net/adminlab/assets/font-awesome/font/fontawesome-webfont.ttf
+14:34:56	Warning: 	File not parsed, looks like binary: thevectorlab.net/adminlab/font/myriadprobold.ttf
+14:34:56	Warning: 	File not parsed, looks like binary: thevectorlab.net/adminlab/font/myriadproit.ttf
+14:34:56	Warning: 	File not parsed, looks like binary: thevectorlab.net/adminlab/font/myriadprolight.ttf
+14:34:56	Warning: 	File not parsed, looks like binary: thevectorlab.net/adminlab/font/myriadproregular.ttf
+14:35:05	Error: 	"Not Found" (404) at link thevectorlab.net/adminlab/img/gallery/photo4.png (from thevectorlab.net/adminlab/gallery.html)
+14:35:05	Error: 	"Not Found" (404) at link thevectorlab.net/adminlab/img/gallery/photo5.png (from thevectorlab.net/adminlab/gallery.html)
+14:35:05	Error: 	"Not Found" (404) at link thevectorlab.net/adminlab/img/gallery/photo6.png (from thevectorlab.net/adminlab/gallery.html)
+14:35:05	Error: 	"Not Found" (404) at link thevectorlab.net/adminlab/img/gallery/photo7.png (from thevectorlab.net/adminlab/gallery.html)
+14:36:58	Error: 	"Not Found" (404) at link thevectorlab.net/adminlab/assets/data-tables/images/sort_asc_disabled.png (from thevectorlab.net/adminlab/assets/data-tables/DT_bootstrap.css)
+14:36:58	Error: 	"Not Found" (404) at link thevectorlab.net/adminlab/assets/data-tables/images/sort_desc_disabled.png (from thevectorlab.net/adminlab/assets/data-tables/DT_bootstrap.css)
+14:36:58	Warning: 	File not parsed, looks like binary: thevectorlab.net/adminlab/assets/coming_soon/demo/css/fonts/opensans-condlight-webfont.ttf
+
+HTTrack Website Copier/3.48-19 mirror complete in 8 minutes 1 seconds : 452 links scanned, 445 files written (13920272 bytes overall) [11958944 bytes received at 24862 bytes/sec], 2459456 bytes transferred using HTTP compression in 106 files, ratio 14%, 56.5 requests per connection
+(6 errors, 6 warnings, 0 messages)

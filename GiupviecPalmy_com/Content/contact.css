@@ -1,0 +1,264 @@
+﻿
+.mid-content {
+	max-width: 980px;
+	padding-right: 5px;
+}
+#boxContact {
+	padding: 20px 25px;
+	background: #fff;
+	-webkit-box-shadow: 2px 2px 2px rgba(188, 188, 188, 1);
+	-moz-box-shadow:    2px 2px 2px rgba(188, 188, 188, 1);
+	box-shadow:         2px 2px 2px rgba(188, 188, 188, 1);
+}
+.textarea {
+	padding: 5px 10px 10px 30px;
+	border: 1px solid #c0c0c0;
+	font-size: 12px;
+}
+.select {
+	font-size: 12px;
+	padding: 5px;
+}
+.textfiled {
+	border: none;
+	padding: 2px 10px 2px 30px;
+}
+.table_contact {}
+.table_contact td {
+	padding-bottom: 8px;
+}
+#boxContact .infoContact {
+	padding-bottom: 30px;
+	margin-bottom: 20px;
+	background: url(images/line_contact_info.png) left bottom no-repeat;
+}
+.info_dealer table td {
+	padding: 5px 0;
+}
+#boxContact .maps {
+	border:1px solid #d4d4d4;
+	padding:1px;
+	text-align:center;
+}
+ul.list_maps {
+	float:left;
+	width:100%;
+}
+.list_maps :after {
+	/* clearing without presentational markup, IE gets extra treatment */
+	display: block;
+	clear: both;
+	content: " ";
+}
+.list_maps li {
+	float: left;
+	padding-right:5px;
+}
+.list_maps a {
+	background:url(images/tabR.gif) right top no-repeat;
+	display: block;
+	color: #5cad1b;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	padding-right:15px;
+}
+.list_maps a span {
+	background:url(images/tabL.gif) left top no-repeat;
+	display: block;
+	line-height: 30px;
+	padding-top:12px;
+	padding-left:25px;
+	padding-right:10px;
+}
+.list_maps a:hover {
+	color: #e60108;
+}
+.list_maps a:hover span {
+}
+.list_maps .active {
+	top:1px;
+	position:relative;
+}
+.list_maps .active a {
+	background:url(images/tabR_on.gif) top right no-repeat;
+	color: #ffffff;
+}
+.list_maps .active a span {
+	background:url(images/tabL_on.gif) top left no-repeat;
+	line-height: 42px;
+	padding-top:0px;
+}
+/* Map styling*/
+#ce_map_container {
+	//padding: 4px;
+}
+#ce_map_canvas {
+	width:100%;
+	height:300px
+}
+#ce-directionsPanel {
+	background-color:#FFF
+}
+/* Direction */
+#ce-map-cpanel-switch {
+	padding:8px;
+	font-size:120%;
+	height:40px;
+	margin-top:2px;
+	background:#444 url("images/map-icon.png") no-repeat 20px center
+}
+#ce-map-cpanel-switch a.ce-route, #ce-map-cpanel-switch a.ce-route:visited {
+	color:#FFF;
+	display:block;
+	float:left;
+	margin:10px 0 0 65px
+}
+.ce-map-cpanel fieldset {
+	border-color:#CCC;
+	border-style:solid none none;
+	border-width:1px 0 0;
+	clear:both;
+	margin:3px
+}
+.ce-map-cpanel fieldset legend {
+	font-size:150%
+}
+.ce-map-cpanel div {
+	clear:left;
+	display:block;
+	margin:5px 0 0;
+	padding:1px 3px;
+	width:100%
+}
+.ce-map-cpanel label {
+}
+.ce-map-cpanel div.submit div, .ce-map-cpanel div.submit div button {
+	display:inline
+}
+/* Coordinates*/
+#ce-map-coordinates {
+	background-color:#F2EFE9;
+	height:15px;
+	margin-top:2px;
+	padding:5px 0
+}
+#ce-map-coordinates div {
+	float:left;
+	width:49%;
+	text-align:center
+}
+.ce-map-coord-label {
+	font-weight:bolder
+}
+.ce-map-coord-value {
+}
+/* MAP: End*/
+
+.title_map {
+	color: #565656;
+	line-height: 22px;
+	float: left;
+	padding: 0 10px 0 5px;
+	min-width: 105px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 26px;
+	margin-bottom: -1px;
+	background: url(images/bg_title_maps.gif) right center no-repeat #fff;
+}
+#ext_maps {
+	float: left;
+	width: 100%;
+	margin-top: -1px;
+	-webkit-box-shadow: 2px 2px 2px rgba(188, 188, 188, 1);
+	-moz-box-shadow:    2px 2px 2px rgba(188, 188, 188, 1);
+	box-shadow:         2px 2px 2px rgba(188, 188, 188, 1);
+}
+.btn_contact {
+	background: url(images/btn_normal.png) center no-repeat;
+	border: none;
+	color: #333333;
+	font-weight: bold;
+	font-size: 12px;
+	width: 58px;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	font-family: arial;
+}
+.btn_contact:hover {
+	color: #fff;
+	background: url(images/btn_active.png) center no-repeat;
+}
+.btn_contact span {
+	line-height: 25px;
+	height: 23px;
+	display: inline-block;
+}
+.btn_send {
+	background: url(images/btn_send.png) center no-repeat;
+	border: none;
+	color: #333333;
+	font-weight: bold;
+	font-size: 12px;
+	width: 60px;
+	height: 36px;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	font-family: arial;
+}
+.btn_cancel {
+	background: url(images/btn_cancel.png) center no-repeat;
+	border: none;
+	color: #333333;
+	font-weight: bold;
+	font-size: 12px;
+	width: 60px;
+	height: 36px;
+	text-align: center;
+	cursor: pointer;
+	padding: 0;
+	font-family: arial;
+}
+#name {
+	background: url(images/bg_name.png) left top no-repeat;
+}
+#address {
+	background: url(images/icon_address.png) left top no-repeat;
+}
+#email {
+	background: url(images/bg_email.png) left top no-repeat;
+}
+#phone {
+	background: url(images/bg_phone.png) left top no-repeat;
+}
+#subject {
+	background: url(images/bg_title.png) left top no-repeat;
+}
+#security_code {
+	width: 138px;
+	background: url(images/bg_security.png) left top no-repeat;
+}
+#content {
+	background: url(images/bg_content.png) left top no-repeat;
+}
+.line_map {
+	padding: 0;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px dotted #cccccc;
+}
+
+.box_contact {
+	margin-top: -15px;
+	margin-right: 70px;
+	background: url(images/icon_thanks.png) top right no-repeat;
+}
+.tbl_contact {
+	padding-top: 30px;
+}
+.box_maps {
+	margin-top: 30px;
+}

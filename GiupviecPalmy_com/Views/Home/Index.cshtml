@@ -1,0 +1,41 @@
+﻿
+@model IList<GiupviecPalmy_com.Models.News>
+@using PagedList.Mvc;
+@using PagedList;
+@*@model PagedList.IPagedList<GiupviecPalmy_com.Models.News>*@
+@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<script src=”https://apis.google.com/js/plusone.js”>
+</script>
+
+<div class="row container-wrapper">
+    @{Html.RenderAction("_Headline", "My_PartialView");}
+    @{Html.RenderAction("_Slide", "My_PartialView");}
+    @{Html.RenderAction("_Services", "My_PartialView");}
+    <div class="row content-wrapper">
+        <div class="col-2"></div>
+        @{Html.RenderAction("_HomeNews", "My_PartialView");}
+        <div class="col-3">
+        @{Html.RenderAction("_LatestNews", "My_PartialView");}      
+        </div>
+    </div>
+    <div class="row content-wrapper">
+        <div class="col-2"></div>
+        <div class="col-4">
+            @{Html.RenderAction("_FamilyTips", "My_PartialView");}
+            @{Html.RenderAction("_Health", "My_PartialView");}
+        </div>
+        <div class="col-4">
+            @{Html.RenderAction("_HomeMaker", "My_PartialView");}
+            @{Html.RenderAction("_LifeStory", "My_PartialView");}
+        </div>
+
+    </div>
+    </div>
+        
+        
+  

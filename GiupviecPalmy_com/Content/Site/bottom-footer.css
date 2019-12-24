@@ -1,0 +1,27 @@
+﻿.bottom-footer-title {
+    background:#483722;
+   height:32px;
+    margin:0;
+    padding:0;
+    width:1366px;
+     color:white;
+    float:left;
+      font-weight:bold;
+      line-height:14px;
+      text-align:center;
+       padding-top:7px;
+}
+
+
+.bottom-footer-content
+{
+    width:1366px;
+    height:auto;
+    margin:0;
+    padding:0;
+    background:#F2EFC4;
+}
+
+
+.center-footer-content a {margin-left:20px;}
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d47dca138ba04721a50a90f638ff731f" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.Advertise" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.Config" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.GroupMember" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.GroupNew" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.Image" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.Member" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.Menu" Width="1.5" PointX="8.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.ModuleUser" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.News" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.PermissionModule" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.User" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.UserModule" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.v_Member_GroupMember" Width="1.5" PointX="4.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.v_ModuleUser" Width="1.5" PointX="11.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.v_News_GroupNews" Width="1.5" PointX="6.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="giupviecpalmy_com_dbModel.v_UserModule" Width="1.5" PointX="8.75" PointY="11.75" IsExpanded="true" />
+        <AssociationConnector Association="giupviecpalmy_com_dbModel.FRK_News_GroupNews" ManuallyRouted="false" />
+        <AssociationConnector Association="giupviecpalmy_com_dbModel.FRK_UserModule_UserModule" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

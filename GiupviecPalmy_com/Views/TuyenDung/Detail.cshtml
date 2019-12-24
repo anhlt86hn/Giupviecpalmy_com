@@ -1,0 +1,56 @@
+﻿@using PagedList.Mvc;
+@using PagedList;
+
+@using GiupviecPalmy_com.Models;
+
+@{
+    ViewBag.Title = @Html.Raw(ViewBag.tit);
+    ViewBag.des = @Html.Raw(ViewBag.des);
+    ViewBag.key = @Html.Raw(ViewBag.key);
+    Layout = "~/Views/Shared/_SubLayout.cshtml";
+}
+
+
+<div class="row container-wrapper">
+    @{Html.RenderAction("_Headline", "My_PartialView");}
+
+    <div class="row content-wrapper">
+       
+         <div class="col-2">
+
+        </div>
+
+        <div class="col-5">
+            <div class="box-wrapper main-box title-link-box">
+                <div class="title-link">
+                    <ul>
+                        <li><a href='/'><i class="icon-home" style="font-size: 14px;"></i>Trang chủ</a></li>
+                        <li class="SecondLast"><a href='@Html.Raw(ViewBag.RootMenuLink)'>@Html.Raw(ViewBag.RootMenuName)</a></li>
+                        <li class='Last'><a href='@Html.Raw(ViewBag.MenuLink)'>@Html.Raw(ViewBag.MenuName)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-wrapper main-box">
+                <h3 class="box-title">
+                    <a href="@Html.Raw(ViewBag.MenuLink)"><span>@Html.Raw(ViewBag.MenuName)</span></a>
+                </h3>
+                <div class="box-detail">
+                    <div class="box-thumbnail">
+                        <img src='@Html.Raw(ViewBag.MenuImage)' alt='@Html.Raw(ViewBag.MenuName)' />
+                    </div>
+                    <div class="box-content">
+                        <p>@Html.Raw(ViewBag.MenuContent)</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            @{Html.RenderAction("_RecruitmentList", "My_PartialView");}
+            @{Html.RenderAction("_LatestNews4", "My_PartialView");}
+        </div>
+              
+    </div>
+    </div>
+
